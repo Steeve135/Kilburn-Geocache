@@ -7,12 +7,14 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
+    // Creates the Main activity and links it to the activity_main.xml layout
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     } // onCreate
 
+    // Makes it so that the register page opens when you click on the word register.
     public void onClick(View v){
       startActivity(new Intent(MainActivity.this, register.class));
 

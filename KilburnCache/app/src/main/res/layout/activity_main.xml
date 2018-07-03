@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- This is the xml for the login page, we'll make some design changes like the color in the future
+     and add things like a title or logo. -->
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -7,7 +10,7 @@
     android:layout_height="match_parent"
     android:background="#25258d"
     tools:context=".MainActivity">
-
+    <!-- These are the text boxes for the username and password -->
     <EditText
         android:id="@+id/editText2"
         android:layout_width="wrap_content"
@@ -32,6 +35,7 @@
         android:hint="Password"
         android:inputType="textPassword" />
 
+    <!-- The button for the login, doesn't do anything yet -->
     <Button
         android:id="@+id/button2"
         android:layout_width="271dp"
@@ -41,6 +45,7 @@
         android:layout_marginBottom="72dp"
         android:text="Login" />
 
+    <!-- The thing to link to register, the onClick and clikable are what make it work -->
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
