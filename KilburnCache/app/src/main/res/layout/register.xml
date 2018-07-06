@@ -6,19 +6,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#25258d"
+    android:background="#ffffff"
     tools:context=".register">
 
-    <EditText
-        android:id="@+id/Username"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:ems="10"
-        android:hint="Username"
-        android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="82dp"
-        tools:layout_editor_absoluteY="425dp" />
 
     <EditText
         android:id="@+id/email"
@@ -26,10 +16,25 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="269dp"
+        android:layout_marginBottom="253dp"
+        android:background="#11000000"
         android:ems="10"
         android:hint="Email"
         android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="332dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="425dp"
+        android:background="#11000000"/>
 
     <EditText
         android:id="@+id/Password"
@@ -37,10 +42,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="192dp"
+        android:layout_marginBottom="172dp"
         android:ems="10"
         android:hint="Password"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:background="#11000000"/>
 
     <Button
         android:id="@+id/button2"

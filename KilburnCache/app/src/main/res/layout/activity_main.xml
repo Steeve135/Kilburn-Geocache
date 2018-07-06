@@ -8,7 +8,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#25258d"
+    android:background="#ffffff"
     tools:context=".MainActivity">
     <!-- These are the text boxes for the username and password -->
     <EditText
@@ -22,7 +22,8 @@
         android:hint="Username"
         android:inputType="textPersonName"
         tools:layout_editor_absoluteX="82dp"
-        tools:layout_editor_absoluteY="425dp" />
+        tools:layout_editor_absoluteY="425dp"
+        android:background="#11000000"/>
 
     <EditText
         android:id="@+id/editText3"
@@ -33,7 +34,8 @@
         android:layout_marginBottom="182dp"
         android:ems="10"
         android:hint="Password"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:background="#11000000"/>
 
     <!-- The button for the login, doesn't do anything yet -->
     <Button
