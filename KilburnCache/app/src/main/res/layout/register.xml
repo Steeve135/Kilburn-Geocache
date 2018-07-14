@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="253dp"
+        android:layout_marginBottom="262dp"
         android:background="#11000000"
         android:ems="10"
         android:hint="Email"

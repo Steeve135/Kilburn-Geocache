@@ -15,9 +15,14 @@ public class MainActivity extends AppCompatActivity {
     } // onCreate
 
     // Makes it so that the register page opens when you click on the word register.
-    public void onClick(View v){
+    public void register(View v){
       startActivity(new Intent(MainActivity.this, register.class));
 
     } // onClick
+    // Opens the main page when you log in.
+    public void login(View v) {
+        startActivity(new Intent(MainActivity.this, HomePage.class));
+    }
+
 } // MainActivity
 
