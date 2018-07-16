@@ -18,7 +18,8 @@ public class MainActivity extends AppCompatActivity {
     public void register(View v){
       startActivity(new Intent(MainActivity.this, register.class));
 
-    } // onClick
+    } // register
+
     // Opens the main page when you log in.
     public void login(View v) {
         startActivity(new Intent(MainActivity.this, HomePage.class));
