@@ -12,7 +12,7 @@
     tools:context=".MainActivity">
     <!-- These are the text boxes for the username and password -->
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/editTextEmail"
         android:layout_width="200dp"
         android:layout_height="25dp"
         android:layout_alignParentBottom="true"
@@ -21,14 +21,14 @@
         android:background="#11000000"
         android:drawableLeft="@drawable/ic_action_user"
         android:ems="10"
-        android:hint="Username"
+        android:hint="Email"
         android:inputType="textPersonName"
         android:textSize="16dp"
         tools:layout_editor_absoluteX="82dp"
         tools:layout_editor_absoluteY="425dp" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/editTextPassword"
         android:layout_width="200dp"
         android:layout_height="25dp"
         android:layout_alignParentBottom="true"
