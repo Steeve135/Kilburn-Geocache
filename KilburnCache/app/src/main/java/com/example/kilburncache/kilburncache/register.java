@@ -65,9 +65,9 @@ public class register extends AppCompatActivity {
     } //registered
 
     private void initViews() {
-        editTextEmail = (EditText) findViewById(R.id.Email);
-        editTextPassword = (EditText) findViewById(R.id.Password);
-        editTextUserName = (EditText) findViewById(R.id.Username);
+        editTextEmail = findViewById(R.id.Email);
+        editTextPassword = findViewById(R.id.Password);
+        editTextUserName = findViewById(R.id.Username);
     }
 
     public boolean validate() {
