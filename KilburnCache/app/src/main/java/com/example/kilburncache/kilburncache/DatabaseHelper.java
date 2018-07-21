@@ -26,12 +26,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
    public static final String COLUMN_USER_SCORE = "score";
 
    // Query for creating the table
-   private static final String CREATE_USER_TABLE = "CREATE TABLE " + TABLE_NAME + "( "
-                                                   + COLUMN_USER_ID + "INTEGER PRIMARY KEY, "
-                                                   + COLUMN_USER_NAME + "TEXT, "
-                                                   + COLUMN_USER_EMAIL + "TEXT, "
-                                                   + COLUMN_USER_PASSWORD + "TEXT, "
-                                                   + COLUMN_USER_SCORE + "INTEGER)";
+   private static final String CREATE_USER_TABLE = " CREATE TABLE " + TABLE_NAME
+                                                   + " ( "
+                                                   + COLUMN_USER_ID + " INTEGER PRIMARY KEY, "
+                                                   + COLUMN_USER_NAME + " TEXT, "
+                                                   + COLUMN_USER_EMAIL + " TEXT, "
+                                                   + COLUMN_USER_PASSWORD + " TEXT, "
+                                                   + COLUMN_USER_SCORE + " INTEGER"
+                                                   + " ) ";
 
    // Query for dropping the table
    private static final String DROP_USER_TABLE = "DROP TABLE IF EXISTS " + TABLE_NAME;
