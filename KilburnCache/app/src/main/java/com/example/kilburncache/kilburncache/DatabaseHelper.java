@@ -19,7 +19,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
    public static final String TABLE_NAME = "users";
 
    // The different columns in the DB
-   public static final String COLUMN_USER_ID = "id";
    public static final String COLUMN_USER_NAME = "username";
    public static final String COLUMN_USER_EMAIL = "email";
    public static final String COLUMN_USER_PASSWORD = "password";
@@ -29,8 +28,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
    // Query for creating the table
    private static final String CREATE_USER_TABLE = "CREATE TABLE " + TABLE_NAME
                                                    + " ("
-                                                   + COLUMN_USER_ID + " INTEGER PRIMARY KEY, "
-                                                   + COLUMN_USER_NAME + " TEXT, "
+                                                   + COLUMN_USER_NAME + " TEXT PRIMARY KEY, "
                                                    + COLUMN_USER_EMAIL + " TEXT, "
                                                    + COLUMN_USER_PASSWORD + " TEXT, "
                                                    + COLUMN_USER_SCORE + " INTEGER "
@@ -74,7 +72,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
    public User Authenticate(User user) {
        SQLiteDatabase db = this.getReadableDatabase();
        Cursor cursor = db.query(TABLE_NAME,
-               new String[]{COLUMN_USER_ID, COLUMN_USER_NAME, COLUMN_USER_EMAIL, COLUMN_USER_PASSWORD, COLUMN_USER_SCORE},
+               new String[]{COLUMN_USER_NAME, COLUMN_USER_EMAIL, COLUMN_USER_PASSWORD, COLUMN_USER_SCORE},
                COLUMN_USER_EMAIL + "=?",
                new String[]{user.email},
                null, null, null);
@@ -82,7 +80,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
        // Taken from the internet cos i'm lazy
        if (cursor != null && cursor.moveToFirst()&& cursor.getCount()>0) {
            //if cursor has value then in user database there is user associated with this given email
-           User user1 = new User(cursor.getString(0), cursor.getString(1), cursor.getString(2), cursor.getString(3), cursor.getInt(4));
+           User user1 = new User(cursor.getString(1), cursor.getString(2), cursor.getString(3), cursor.getInt(4));
 
            //Match both passwords check they are same or not
            if (user.password.equalsIgnoreCase(user1.password)) {
@@ -100,7 +98,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public boolean isEmailExists(String email) {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.query(TABLE_NAME,// Selecting Table
-                new String[]{COLUMN_USER_ID, COLUMN_USER_NAME, COLUMN_USER_EMAIL, COLUMN_USER_PASSWORD, COLUMN_USER_SCORE},//Selecting columns want to query
+                new String[]{COLUMN_USER_NAME, COLUMN_USER_EMAIL, COLUMN_USER_PASSWORD, COLUMN_USER_SCORE},//Selecting columns want to query
                 COLUMN_USER_EMAIL + "=?",
                 new String[]{email},//Where clause
                 null, null, null);

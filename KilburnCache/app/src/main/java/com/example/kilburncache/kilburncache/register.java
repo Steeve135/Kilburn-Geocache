@@ -40,7 +40,7 @@ public class register extends AppCompatActivity {
 
             // Check to see if the email is already in the db
             if (!dbHelper.isEmailExists(Email)) {
-                dbHelper.addUser(new User(null, UserName, Email, Password, 0));
+                dbHelper.addUser(new User(UserName, Email, Password, 0));
                 Context context = getApplicationContext();
                 CharSequence text = "User created successfully!";
                 int duration = Toast.LENGTH_SHORT;

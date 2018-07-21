@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
           String Password = editTextPassword.getText().toString();
 
           // Authenticate the user.
-          User currentUser = dbHelper.Authenticate(new User(null, null, Email, Password, 0));
+          User currentUser = dbHelper.Authenticate(new User(null, Email, Password, 0));
 
             if (currentUser != null) {
                 startActivity(new Intent(MainActivity.this, HomePage.class));
