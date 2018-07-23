@@ -80,7 +80,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
        // Taken from the internet cos i'm lazy
        if (cursor != null && cursor.moveToFirst()&& cursor.getCount()>0) {
            //if cursor has value then in user database there is user associated with this given email
-           User user1 = new User(cursor.getString(1), cursor.getString(2), cursor.getString(3), cursor.getInt(4));
+           User user1 = new User(cursor.getString(0), cursor.getString(1), cursor.getString(2), cursor.getInt(3));
 
            //Match both passwords check they are same or not
            if (user.password.equalsIgnoreCase(user1.password)) {
