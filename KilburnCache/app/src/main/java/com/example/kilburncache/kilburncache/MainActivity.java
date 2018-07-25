@@ -71,11 +71,9 @@ public class MainActivity extends AppCompatActivity {
 
             Toast toast = Toast.makeText(context, text, duration);
             toast.show();
-        } else {
-            valid = true;
-        }
 
-        if (Password.isEmpty()) {
+
+        } else if (Password.isEmpty()) {
             valid = false;
             Context context = getApplicationContext();
             CharSequence text = "Please enter a valid password";

@@ -79,7 +79,7 @@ public class register extends AppCompatActivity {
         String Password = editTextPassword.getText().toString();
 
         // Validate the username
-        if (UserName.isEmpty()){
+        if (UserName.isEmpty()) {
             valid = false;
             Context context = getApplicationContext();
             CharSequence text = "Please enter a valid username";
@@ -87,12 +87,9 @@ public class register extends AppCompatActivity {
 
             Toast toast = Toast.makeText(context, text, duration);
             toast.show();
-        }else{
-            valid = true;
-        }
 
-        // Validate the email address
-        if (!android.util.Patterns.EMAIL_ADDRESS.matcher(Email).matches()) {
+            // Validate the email address
+        } else if (!android.util.Patterns.EMAIL_ADDRESS.matcher(Email).matches()) {
             valid = false;
             Context context = getApplicationContext();
             CharSequence text = "Please enter a valid email";
@@ -100,12 +97,11 @@ public class register extends AppCompatActivity {
 
             Toast toast = Toast.makeText(context, text, duration);
             toast.show();
-        } else {
-            valid = true;
-        }
+
+
 
         // validate the password
-        if (Password.isEmpty()) {
+        } else if (Password.isEmpty()) {
             valid = false;
             Context context = getApplicationContext();
             CharSequence text = "Please enter a valid password";
