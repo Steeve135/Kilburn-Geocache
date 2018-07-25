@@ -8,7 +8,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#8703a7"
+    android:background="#000000"
     tools:context=".MainActivity">
     <!-- These are the text boxes for the username and password -->
     <EditText
@@ -18,7 +18,8 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="260dp"
-        android:background="#11000000"
+        android:background="#000000"
+        android:textColorHint="#009933"
         android:drawableLeft="@drawable/ic_action_user"
         android:ems="10"
         android:hint="Email"
@@ -34,7 +35,8 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="194dp"
-        android:background="#11000000"
+        android:background="#000000"
+        android:textColorHint="#009933"
         android:drawableLeft="@drawable/ic_action_pass"
         android:ems="10"
         android:hint="Password"
@@ -50,6 +52,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="72dp"
         android:text="Login"
+        android:textColor="#000000"
         android:onClick="login"
         />
 
@@ -61,7 +64,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="37dp"
-        android:textColor="#000000"
+        android:textColor="#ffffff"
         android:text="Register"
         android:onClick="register"
         android:clickable="true"
