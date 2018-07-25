@@ -4,71 +4,101 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#8703a7"
+    android:background="#000000"
     tools:context=".HomePage">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+        android:
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Challenge One"
+            android:textColor="#009933"
+            android:background="#000000"
 
+            />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Challenge One" />
+            android:text="Challenge Two"
+            android:textColor="#009933"
+            android:background="#000000"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Challenge Two" />
+            android:text="Challenge Three"
+            android:textColor="#009933"
+            android:background="#000000"/>]
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Challenge Three" />]
+            android:text="Challenge Four"
+            android:textColor="#009933"
+            android:background="#000000"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Challenge Four" />
+            android:text="Challenge Six"
+            android:textColor="#009933"
+            android:background="#000000"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Challenge Six" />
+            android:text="Challenge Seven"
+            android:textColor="#009933"
+            android:background="#000000"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Challenge Seven" />
+            android:text="Challenge Eight"
+            android:textColor="#009933"
+            android:background="#000000"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Challenge Eight" />
+            android:text="Challenge Nine"
+            android:textColor="#009933"
+            android:background="#000000"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Challenge Nine" />
+            android:text="Challenge Ten"
+            android:textColor="#009933"
+            android:background="#000000"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Challenge Ten" />
+            android:text="Challenge Eleven"
+            android:textColor="#009933"
+            android:background="#000000"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Challenge Eleven" />
+            android:text="Challenge Twelve"
+            android:textColor="#009933"
+            android:background="#000000"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Challenge Twelve" />
+            android:text="Challenge Thirteen"
+            android:textColor="#009933"
+            android:background="#000000"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Challenge Thirteen" />
+            android:text="Challenge Fourteen"
+            android:textColor="#009933"
+            android:background="#000000"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Challenge Fourteen" />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Challenge Fifteen" />
+            android:text="Challenge Fifteen"
+            android:textColor="#009933"
+            android:background="#000000"/>
 
     </LinearLayout>
 </ScrollView>
