@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
             if (currentUser != null) {
                 startActivity(new Intent(MainActivity.this, HomePage.class));
+                finish();
             }else{
                 Context context = getApplicationContext();
                 CharSequence text = "Log in failed";
