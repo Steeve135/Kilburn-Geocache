@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Kilburn cache</string>
+    <string name="title_activity_card_home_page">CardHomePage</string>
 </resources>

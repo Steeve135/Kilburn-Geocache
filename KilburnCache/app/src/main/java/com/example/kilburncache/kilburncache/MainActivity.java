@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
             if (currentUser != null) {
                 startActivity(new Intent(MainActivity.this, HomePage.class));
+                //startActivity(new Intent(MainActivity.this, CardHomePage.class));
                 finish();
             }else{
                 Context context = getApplicationContext();
