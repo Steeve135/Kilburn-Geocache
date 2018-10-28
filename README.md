@@ -1,2 +1,2 @@
 # Kilburn-Geocache
-Repository for our app
+Repository for our app KilburnCache
